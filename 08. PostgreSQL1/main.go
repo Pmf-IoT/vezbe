@@ -10,7 +10,7 @@ import (
 
 func main() {
 	// uspostavljanje konekcije
-	db, err := sql.Open("postgres", "postgres://postgres:vojMisic117java@192.168.124.153:5432/iot_pmf?sslmode=disable")
+	db, err := sql.Open("postgres", "postgres://korisnik:lozinka@ip_adresa_servera:port/ime_baze?sslmode=disable")
 	if err != nil {
 		log.Fatal("Greska u konekciji sa SQL serverom.: ", err)
 	}
